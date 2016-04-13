@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE tp:taxon-treatment SYSTEM "file:/media/thc4/KINGSTON8/Work/Plazi/TaxPubJATS-green/tax-treatment-NS0.dtd">
+<tp:taxon-treatment xmlns:tp="http://www.plazi.org/taxpub">
+    <tp:nomenclature>
+        <tp:taxon-name>Penestomus stilleri </tp:taxon-name>( <tp:taxon-name>Dippenaar-Schoeman
+        </tp:taxon-name>, 1989), new combination </tp:nomenclature>
+    <tp:treatment-sec sec-type="description">
+        <p>Figs 8E , 8F, 16G-I, 18C, 18D, 21 </p>
+    </tp:treatment-sec>
+    <tp:treatment-sec sec-type="reference_group">
+        <p>
+            <tp:taxon-name>Wajane stilleri Dippenaar-Schoeman, 1989 </tp:taxon-name>: 134, figs 2,
+            7-8 . </p>
+    </tp:treatment-sec>
+    <tp:treatment-sec sec-type="materials_examined">
+        <p>
+            <tp:material-citation>Type material. <named-content content-type="typeStatus">Holotype
+                </named-content>: ♀ (with <named-content content-type="specimenCount">1 juvenile </named-content>
+                <named-content content-type="typeStatus">paratype </named-content>), <named-content
+                    content-type="location">Paarl Du Toit's Kloof, Donkerkloof </named-content>,
+                    <named-content content-type="collectingRegion">Western Cape </named-content>,
+                    <named-content content-type="collectingCountry">South Africa </named-content>,
+                    <named-content content-type="geoCoordinate">33°45'S </named-content>
+                <named-content content-type="geoCoordinate">18°50'E </named-content>, <named-content
+                    content-type="quantity"> 300 m </named-content>, <named-content
+                    content-type="date"> 3 August 1975 </named-content>, found in silk-lined tunnels
+                under exfoliated section of rock, in a boulder, <named-content
+                    content-type="collectorName">M. Stiller </named-content>( <named-content
+                    content-type="specimenCode">AcAT 88/29 </named-content>, <named-content
+                    content-type="collectionCode">NCA </named-content>) </tp:material-citation>. </p>
+        <p>
+            <tp:material-citation>Additional material examined. <named-content
+                    content-type="collectingCountry">SOUTH AFRICA </named-content>. <named-content
+                    content-type="collectingRegion">Western Cape </named-content>: <named-content
+                    content-type="specimenCount">3 ♀ </named-content>
+                <named-content content-type="specimenCount">5 juveniles </named-content>,
+                    <named-content content-type="location">Winterhoek </named-content>[
+                    <named-content content-type="geoCoordinate">33.1°S </named-content>,
+                    <named-content content-type="geoCoordinate">19.13°E </named-content>]
+                    <named-content content-type="quantity"> 4400-5500 ft </named-content>,
+                    <named-content content-type="date"> 20 November 1916 </named-content>,
+                    <named-content content-type="collectorName">Tucker </named-content>(
+                    <named-content content-type="specimenCode">B2686 SAM-ENW-B002686
+                </named-content>, <named-content content-type="collectionCode">SAM </named-content>)
+            </tp:material-citation>; <tp:material-citation>
+                <named-content content-type="specimenCount">2 ♀ </named-content>, <named-content
+                    content-type="specimenCount">1 juvenile </named-content>, <named-content
+                    content-type="collectingMunicipality">Winterhoek </named-content>[
+                    <named-content content-type="geoCoordinate">33.1°S </named-content>,
+                    <named-content content-type="geoCoordinate">19.13°E </named-content>],
+                    <named-content content-type="quantity"> 5000-5600 ft </named-content>,
+                    <named-content content-type="date"> 20 November 1916 </named-content>,
+                    <named-content content-type="collectorName">Tucker </named-content>(
+                    <named-content content-type="specimenCode">B2853 SAM-ENW-B002853
+                </named-content>, <named-content content-type="collectionCode">SAM </named-content>)
+            </tp:material-citation>. </p>
+    </tp:treatment-sec>
+    <tp:treatment-sec sec-type="diagnosis">
+        <p>Diagnosis. Female distinguished by the ovoid, diverging spermathecae (Figs 16 H , I ) and
+            PA of the epigynum that are as sclerotized as the AL (Figs 8 E , 16 G ). Male unknown.
+        </p>
+    </tp:treatment-sec>
+    <tp:treatment-sec sec-type="description">
+        <p>Description. Carapace orange-yellow, lighter posteriorly with smooth texture (Fig. 18 C
+            ). Sternum dusky pale yellow (Fig. 18 D ). Chelicerae orange, with five promarginal
+            teeth, two retromarginal teeth. Legs brown basally, leg I and II orange distally,
+            posterior legs pale yellow distally. Abdomen medium gray dorsally with light
+            dorsolateral patches (Fig. 18 C ). (Most setae lost on specimens so these data are not
+            reported here.) </p>
+        <p>Epigynum. Subpentagonal, MP/PL complex approximately 1/4 length of epigynum, parallel
+            sided with grooves converging posteriorly, extending only slightly posterior from AL
+            (Figs 8 E , 16 G ). PA sclerotized, undifferentiated from rest of epigynum. </p>
+        <p>Female macrosetae: Leg I: femur d1, tibia v2-2 , metatarsus v2-2 -2; leg II: femur d1,
+            tibia v1 , metatarsus v2-2 ; leg III: femur d1, tibia v1 , metatarsus v1-3 ; leg IV:
+            femur d1, metatarsus v1-1 -3. </p>
+        <p> Holotype female (AcAT 88/29): Total length 3.6, carapace 1.44 long, 0.97 wide, 0.38
+            high, sternum 0.91 long, 0.50 wide. Leg measurements: </p>
+        <p>
+            <table-wrap>
+                <table>
+                    <tr>
+                        <td>- </td>
+                        <td>I </td>
+                        <td>II </td>
+                        <td>III </td>
+                        <td>IV </td>
+                        <td>Pedipalp </td>
+                    </tr>
+                    <tr>
+                        <td>Femur </td>
+                        <td>0.65 </td>
+                        <td>0.62 </td>
+                        <td>0.56 </td>
+                        <td>0.71 </td>
+                        <td>0.35 </td>
+                    </tr>
+                    <tr>
+                        <td>Patella </td>
+                        <td>0.43 </td>
+                        <td>0.40 </td>
+                        <td>0.32 </td>
+                        <td>0.48 </td>
+                        <td>0.17 </td>
+                    </tr>
+                    <tr>
+                        <td>Tibia </td>
+                        <td>0.48 </td>
+                        <td>0.44 </td>
+                        <td>0.40 </td>
+                        <td>0.63 </td>
+                        <td>0.17 </td>
+                    </tr>
+                    <tr>
+                        <td>Metatarsus </td>
+                        <td>0.43 </td>
+                        <td>0.40 </td>
+                        <td>0.33 </td>
+                        <td>0.46 </td>
+                        <td>- </td>
+                    </tr>
+                    <tr>
+                        <td>Tarsus </td>
+                        <td>0.27 </td>
+                        <td>0.24 </td>
+                        <td>0.19 </td>
+                        <td>0.22 </td>
+                        <td>0.30 </td>
+                    </tr>
+                    <tr>
+                        <td>Total </td>
+                        <td>2.25 </td>
+                        <td>2.10 </td>
+                        <td>1.79 </td>
+                        <td>2.51 </td>
+                        <td>1.00 </td>
+                    </tr>
+                </table>
+            </table-wrap>
+        </p>
+    </tp:treatment-sec>
+    <tp:treatment-sec sec-type="distribution">
+        <p>
+            <?PageBreak 31?>. Known from Western Cape Province, South Africa (Fig. 21). </p>
+    </tp:treatment-sec>
+    <tp:treatment-sec sec-type="discussion">
+        <p>Remarks. <tp:taxon-name>Dippenaar-Schoeman </tp:taxon-name>(1989) reported the absence of
+            a cribellum in this species. Indeed, no cribellum is obvious in the somewhat degraded
+            type series specimens, although there is evidence of a broad lobe that could be a
+            cribellum or wide colulus. In the holotype , most setae are missing from the legs,
+            including the calamistrum region; in the juvenile paratype , both legs IV are broken
+            near the tibia-metatarsus joint. Other specimens (i.e., those from Winterhoek, South
+            Africa; B 2853, SAM-ENW-B002853), have a well developed cribellum (Fig. 8 F ) and
+            calamistrum. </p>
+    </tp:treatment-sec>
+</tp:taxon-treatment>

@@ -1,0 +1,1287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar ns="" xmlns:mods="http://www.loc.gov/mods/v3" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <start>
+    <element name="document">
+      <optional>
+        <attribute name="ENCODING">
+          <data type="NCName"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="ID-HNS-Pub">
+          <data type="NCName"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="ID-Handle">
+          <data type="NCName"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="ModsDocAuthor"/>
+      </optional>
+      <optional>
+        <attribute name="ModsDocDate">
+          <data type="integer"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="ModsDocID">
+          <data type="NMTOKEN"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="ModsDocOrigin">
+          <data type="anyURI"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="ModsDocTitle"/>
+      </optional>
+      <optional>
+        <attribute name="_generate">
+          <data type="NCName"/>
+        </attribute>
+      </optional>
+      <attribute name="checkinTime">
+        <data type="integer"/>
+      </attribute>
+      <attribute name="checkinUser">
+        <data type="NCName"/>
+      </attribute>
+      <attribute name="docAuthor"/>
+      <attribute name="docDate">
+        <data type="integer"/>
+      </attribute>
+      <attribute name="docId"/>
+      <optional>
+        <attribute name="docLanguage">
+          <data type="NCName"/>
+        </attribute>
+      </optional>
+      <attribute name="docName"/>
+      <attribute name="docOrigin"/>
+      <optional>
+        <attribute name="docSource">
+          <data type="anyURI"/>
+        </attribute>
+      </optional>
+      <attribute name="docTitle"/>
+      <optional>
+        <attribute name="docUuid"/>
+      </optional>
+      <optional>
+        <attribute name="docUuidSource">
+          <data type="NCName"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="lastPageId">
+          <data type="integer"/>
+        </attribute>
+      </optional>
+      <attribute name="lastPageNumber">
+        <data type="integer"/>
+      </attribute>
+      <attribute name="masterDocId"/>
+      <attribute name="masterDocTitle"/>
+      <optional>
+        <attribute name="masterLastPageNumber">
+          <data type="integer"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="masterPageNumber">
+          <data type="integer"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="originalUpdateTime">
+          <data type="integer"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="pageId">
+          <data type="NMTOKEN"/>
+        </attribute>
+      </optional>
+      <attribute name="pageNumber">
+        <data type="integer"/>
+      </attribute>
+      <attribute name="updateTime">
+        <data type="integer"/>
+      </attribute>
+      <attribute name="updateUser">
+        <data type="NCName"/>
+      </attribute>
+      <element name="mods:mods">
+        <ref name="mods.titleInfo"/>
+        <oneOrMore>
+          <element name="mods:name">
+            <attribute name="type">
+              <data type="NCName"/>
+            </attribute>
+            <element name="mods:role">
+              <element name="mods:roleTerm">
+                <data type="NCName"/>
+              </element>
+            </element>
+            <element name="mods:namePart">
+              <text/>
+            </element>
+          </element>
+        </oneOrMore>
+        <element name="mods:typeOfResource">
+          <data type="NCName"/>
+        </element>
+        <optional>
+          <element name="mods:originInfo">
+            <element name="mods:dateIssued">
+              <data type="integer"/>
+            </element>
+            <element name="mods:publisher">
+              <text/>
+            </element>
+            <element name="mods:place">
+              <element name="mods:placeTerm">
+                <data type="NCName"/>
+              </element>
+            </element>
+          </element>
+        </optional>
+        <optional>
+          <element name="mods:relatedItem">
+            <attribute name="type">
+              <data type="NCName"/>
+            </attribute>
+            <ref name="mods.titleInfo"/>
+            <element name="mods:part">
+              <element name="mods:date">
+                <data type="integer"/>
+              </element>
+              <element name="mods:detail">
+                <attribute name="type">
+                  <data type="NCName"/>
+                </attribute>
+                <element name="mods:number">
+                  <data type="integer"/>
+                </element>
+              </element>
+              <element name="mods:extent">
+                <attribute name="unit">
+                  <data type="NCName"/>
+                </attribute>
+                <element name="mods:start">
+                  <data type="integer"/>
+                </element>
+                <element name="mods:end">
+                  <data type="integer"/>
+                </element>
+              </element>
+            </element>
+          </element>
+        </optional>
+        <optional>
+          <element name="mods:location">
+            <element name="mods:url">
+              <data type="anyURI"/>
+            </element>
+          </element>
+        </optional>
+        <element name="mods:classification">
+          <text/>
+        </element>
+        <zeroOrMore>
+          <element name="mods:identifier">
+            <attribute name="type">
+              <data type="NCName"/>
+            </attribute>
+            <data type="NMTOKEN"/>
+          </element>
+        </zeroOrMore>
+      </element>
+      <element name="treatment">
+        <attribute name="LSID">
+          <data type="anyURI"/>
+        </attribute>
+        <optional>
+          <attribute name="httpUri">
+            <data type="anyURI"/>
+          </attribute>
+        </optional>
+        <optional>
+          <attribute name="lastPageId">
+            <data type="integer"/>
+          </attribute>
+        </optional>
+        <optional>
+          <attribute name="lastPageNumber">
+            <data type="integer"/>
+          </attribute>
+        </optional>
+        <optional>
+          <attribute name="pageId">
+            <data type="NMTOKEN"/>
+          </attribute>
+        </optional>
+        <optional>
+          <attribute name="pageNumber">
+            <data type="integer"/>
+          </attribute>
+        </optional>
+        <oneOrMore>
+          <element name="subSubSection">
+            <optional>
+              <attribute name="lastPageId">
+                <data type="integer"/>
+              </attribute>
+            </optional>
+            <optional>
+              <attribute name="lastPageNumber">
+                <data type="integer"/>
+              </attribute>
+            </optional>
+            <optional>
+              <attribute name="pageId">
+                <data type="NMTOKEN"/>
+              </attribute>
+            </optional>
+            <optional>
+              <attribute name="pageNumber">
+                <data type="integer"/>
+              </attribute>
+            </optional>
+            <attribute name="type"/>
+            <oneOrMore>
+              <choice>
+                <ref name="paragraph"/>
+                <element name="caption">
+                  <optional>
+                    <attribute name="pageId">
+                      <data type="integer"/>
+                    </attribute>
+                  </optional>
+                  <optional>
+                    <attribute name="pageNumber">
+                      <data type="integer"/>
+                    </attribute>
+                  </optional>
+                  <ref name="paragraph"/>
+                </element>
+              </choice>
+            </oneOrMore>
+          </element>
+        </oneOrMore>
+      </element>
+    </element>
+  </start>
+  <define name="mods.titleInfo">
+    <element name="mods:titleInfo">
+      <element name="mods:title">
+        <text/>
+      </element>
+    </element>
+  </define>
+  <define name="paragraph">
+    <element name="paragraph">
+      <optional>
+        <attribute name="lastPageId">
+          <data type="integer"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="lastPageNumber">
+          <data type="integer"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="pageId">
+          <data type="NMTOKEN"/>
+        </attribute>
+      </optional>
+      <attribute name="pageNumber">
+        <data type="integer"/>
+      </attribute>
+      <optional>
+        <attribute name="type">
+          <data type="NCName"/>
+        </attribute>
+      </optional>
+      <oneOrMore>
+        <choice>
+          <text/>
+          <ref name="collectionCode"/>
+          <ref name="date"/>
+          <ref name="geoCoordinate"/>
+          <ref name="materialsCitation"/>
+          <ref name="normalizedToken"/>
+          <ref name="pageBreakToken"/>
+          <ref name="pageNumber"/>
+          <ref name="quantity"/>
+          <ref name="span"/>
+          <ref name="specimenCount"/>
+          <ref name="taxonomicName"/>
+          <ref name="taxonomicNameLabel"/>
+          <ref name="tr"/>
+          <ref name="treatmentCitation"/>
+          <ref name="typeStatus"/>
+          <element name="bibRefCitation">
+            <optional>
+              <attribute name="author"/>
+            </optional>
+            <optional>
+              <attribute name="journalOrPublisher"/>
+            </optional>
+            <attribute name="pageId">
+              <data type="integer"/>
+            </attribute>
+            <attribute name="pageNumber">
+              <data type="integer"/>
+            </attribute>
+            <optional>
+              <attribute name="title"/>
+            </optional>
+            <optional>
+              <attribute name="type"/>
+            </optional>
+            <optional>
+              <attribute name="url"/>
+            </optional>
+            <optional>
+              <attribute name="volume">
+                <data type="integer"/>
+              </attribute>
+            </optional>
+            <optional>
+              <attribute name="year">
+                <data type="integer"/>
+              </attribute>
+            </optional>
+            <oneOrMore>
+              <choice>
+                <text/>
+                <ref name="normalizedToken"/>
+                <ref name="taxonomicName"/>
+              </choice>
+            </oneOrMore>
+          </element>
+          <element name="misspelling">
+            <optional>
+              <attribute name="corrections"/>
+            </optional>
+            <optional>
+              <attribute name="language">
+                <data type="NCName"/>
+              </attribute>
+            </optional>
+            <attribute name="pageId">
+              <data type="integer"/>
+            </attribute>
+            <attribute name="pageNumber">
+              <data type="integer"/>
+            </attribute>
+            <attribute name="type">
+              <data type="NCName"/>
+            </attribute>
+            <data type="NCName"/>
+          </element>
+          <element name="table">
+            <attribute name="border">
+              <data type="integer"/>
+            </attribute>
+            <attribute name="pageId">
+              <data type="NMTOKEN"/>
+            </attribute>
+            <attribute name="pageNumber">
+              <data type="integer"/>
+            </attribute>
+            <oneOrMore>
+              <ref name="tr"/>
+            </oneOrMore>
+          </element>
+        </choice>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="date">
+    <element name="date">
+      <optional>
+        <attribute name="day">
+          <data type="integer"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="month">
+          <data type="integer"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="pageId">
+          <data type="NMTOKEN"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="pageNumber">
+          <data type="integer"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="value">
+          <data type="NMTOKEN"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="valueMax">
+          <data type="NMTOKEN"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="valueMin">
+          <data type="date"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="year">
+          <data type="integer"/>
+        </attribute>
+      </optional>
+      <oneOrMore>
+        <choice>
+          <text/>
+          <ref name="collectingDate"/>
+          <ref name="normalizedToken"/>
+        </choice>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="normalizedToken">
+    <element name="normalizedToken">
+      <attribute name="originalValue"/>
+      <optional>
+        <attribute name="pageId">
+          <data type="integer"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="pageNumber">
+          <data type="integer"/>
+        </attribute>
+      </optional>
+      <oneOrMore>
+        <choice>
+          <text/>
+          <ref name="collectingRegion"/>
+          <ref name="collectorName"/>
+        </choice>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="quantity">
+    <element name="quantity">
+      <attribute name="metricMagnitude">
+        <data type="integer"/>
+      </attribute>
+      <attribute name="metricUnit">
+        <data type="NCName"/>
+      </attribute>
+      <attribute name="metricValue">
+        <data type="decimal"/>
+      </attribute>
+      <optional>
+        <attribute name="metricValueMax">
+          <data type="decimal"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="metricValueMin">
+          <data type="decimal"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="pageId">
+          <data type="NMTOKEN"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="pageNumber">
+          <data type="integer"/>
+        </attribute>
+      </optional>
+      <attribute name="unit">
+        <data type="NCName"/>
+      </attribute>
+      <attribute name="value">
+        <data type="decimal"/>
+      </attribute>
+      <optional>
+        <attribute name="valueMax">
+          <data type="decimal"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="valueMin">
+          <data type="decimal"/>
+        </attribute>
+      </optional>
+      <oneOrMore>
+        <choice>
+          <text/>
+          <ref name="date"/>
+          <ref name="elevation"/>
+        </choice>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="pageNumber">
+    <element name="pageNumber">
+      <attribute name="ambiguity">
+        <data type="integer"/>
+      </attribute>
+      <attribute name="fuzzyness">
+        <data type="integer"/>
+      </attribute>
+      <attribute name="pageId">
+        <data type="integer"/>
+      </attribute>
+      <attribute name="pageNumber">
+        <data type="integer"/>
+      </attribute>
+      <attribute name="score">
+        <data type="integer"/>
+      </attribute>
+      <attribute name="value">
+        <data type="integer"/>
+      </attribute>
+      <text/>
+    </element>
+  </define>
+  <define name="typeStatus">
+    <element name="typeStatus">
+      <optional>
+        <attribute name="pageId">
+          <data type="NMTOKEN"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="pageNumber">
+          <data type="integer"/>
+        </attribute>
+      </optional>
+      <data type="NCName"/>
+    </element>
+  </define>
+  <define name="collectionCode">
+    <element name="collectionCode">
+      <optional>
+        <attribute name="collectionName"/>
+      </optional>
+      <optional>
+        <attribute name="pageId">
+          <data type="NMTOKEN"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="pageNumber">
+          <data type="integer"/>
+        </attribute>
+      </optional>
+      <oneOrMore>
+        <choice>
+          <text/>
+          <ref name="normalizedToken"/>
+        </choice>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="materialsCitation">
+    <element name="materialsCitation">
+      <optional>
+        <attribute name="collectingDate">
+          <data type="NMTOKEN"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="collectingDateMax">
+          <data type="date"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="collectingDateMin">
+          <data type="date"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="collectingMethod"/>
+      </optional>
+      <optional>
+        <attribute name="collectionCode"/>
+      </optional>
+      <optional>
+        <attribute name="collectorName"/>
+      </optional>
+      <attribute name="country"/>
+      <optional>
+        <attribute name="elevation"/>
+      </optional>
+      <optional>
+        <attribute name="latitude">
+          <data type="decimal"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="location"/>
+      </optional>
+      <optional>
+        <attribute name="longLatPrecision">
+          <data type="integer"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="longitude">
+          <data type="decimal"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="municipality">
+          <data type="NCName"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="pageId">
+          <data type="NMTOKEN"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="pageNumber">
+          <data type="integer"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="specimenCode"/>
+      </optional>
+      <optional>
+        <attribute name="specimenCount">
+          <data type="integer"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="specimenCount-female">
+          <data type="integer"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="specimenCount-male">
+          <data type="integer"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="specimenCountFemale">
+          <data type="integer"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="specimenCountMale">
+          <data type="integer"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="specimenCountOther">
+          <data type="integer"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="stateProvince"/>
+      </optional>
+      <optional>
+        <attribute name="typeStatus">
+          <data type="NCName"/>
+        </attribute>
+      </optional>
+      <oneOrMore>
+        <choice>
+          <text/>
+          <ref name="collectingDate"/>
+          <ref name="collectingRegion"/>
+          <ref name="collectionCode"/>
+          <ref name="collectorName"/>
+          <ref name="date"/>
+          <ref name="elevation"/>
+          <ref name="geoCoordinate"/>
+          <ref name="normalizedToken"/>
+          <ref name="pageBreakToken"/>
+          <ref name="quantity"/>
+          <ref name="specimenCount"/>
+          <ref name="taxonomicName"/>
+          <ref name="typeStatus"/>
+          <element name="collectingCountry">
+            <optional>
+              <attribute name="pageId">
+                <data type="NMTOKEN"/>
+              </attribute>
+            </optional>
+            <optional>
+              <attribute name="pageNumber">
+                <data type="integer"/>
+              </attribute>
+            </optional>
+            <optional>
+              <attribute name="value"/>
+            </optional>
+            <text/>
+          </element>
+          <element name="collectingMethod">
+            <optional>
+              <attribute name="pageId">
+                <data type="integer"/>
+              </attribute>
+            </optional>
+            <optional>
+              <attribute name="pageNumber">
+                <data type="integer"/>
+              </attribute>
+            </optional>
+            <text/>
+          </element>
+          <element name="collectingMunicipality">
+            <optional>
+              <attribute name="pageId">
+                <data type="NCName"/>
+              </attribute>
+            </optional>
+            <optional>
+              <attribute name="pageNumber">
+                <data type="integer"/>
+              </attribute>
+            </optional>
+            <data type="NCName"/>
+          </element>
+          <element name="location">
+            <attribute name="LSID">
+              <data type="anyURI"/>
+            </attribute>
+            <attribute name="country"/>
+            <optional>
+              <attribute name="latitude">
+                <data type="decimal"/>
+              </attribute>
+            </optional>
+            <optional>
+              <attribute name="longLatPrecision">
+                <data type="integer"/>
+              </attribute>
+            </optional>
+            <optional>
+              <attribute name="longitude">
+                <data type="decimal"/>
+              </attribute>
+            </optional>
+            <attribute name="name"/>
+            <optional>
+              <attribute name="pageId">
+                <data type="integer"/>
+              </attribute>
+            </optional>
+            <optional>
+              <attribute name="pageNumber">
+                <data type="integer"/>
+              </attribute>
+            </optional>
+            <optional>
+              <attribute name="stateProvince"/>
+            </optional>
+            <oneOrMore>
+              <choice>
+                <text/>
+                <ref name="normalizedToken"/>
+                <ref name="quantity"/>
+              </choice>
+            </oneOrMore>
+          </element>
+          <element name="specimenCode">
+            <optional>
+              <attribute name="pageId">
+                <data type="integer"/>
+              </attribute>
+            </optional>
+            <optional>
+              <attribute name="pageNumber">
+                <data type="integer"/>
+              </attribute>
+            </optional>
+            <oneOrMore>
+              <choice>
+                <text/>
+                <ref name="date"/>
+              </choice>
+            </oneOrMore>
+          </element>
+        </choice>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="geoCoordinate">
+    <element name="geoCoordinate">
+      <attribute name="direction">
+        <data type="NCName"/>
+      </attribute>
+      <attribute name="orientation">
+        <data type="NCName"/>
+      </attribute>
+      <optional>
+        <attribute name="pageId">
+          <data type="integer"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="pageNumber">
+          <data type="integer"/>
+        </attribute>
+      </optional>
+      <attribute name="precision">
+        <data type="integer"/>
+      </attribute>
+      <attribute name="value">
+        <data type="decimal"/>
+      </attribute>
+      <oneOrMore>
+        <choice>
+          <text/>
+          <ref name="collectionCode"/>
+          <ref name="pageNumber"/>
+        </choice>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="pageBreakToken">
+    <element name="pageBreakToken">
+      <optional>
+        <attribute name="pageId">
+          <data type="NMTOKEN"/>
+        </attribute>
+      </optional>
+      <attribute name="pageNumber">
+        <data type="integer"/>
+      </attribute>
+      <optional>
+        <attribute name="start">
+          <data type="NCName"/>
+        </attribute>
+      </optional>
+      <oneOrMore>
+        <choice>
+          <text/>
+          <ref name="collectionCode"/>
+          <ref name="typeStatus"/>
+        </choice>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="treatmentCitation">
+    <element name="treatmentCitation">
+      <optional>
+        <attribute name="httpURI">
+          <data type="anyURI"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="httpUri">
+          <data type="anyURI"/>
+        </attribute>
+      </optional>
+      <oneOrMore>
+        <choice>
+          <text/>
+          <ref name="taxonomicName"/>
+        </choice>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="taxonomicNameLabel">
+    <element name="taxonomicNameLabel">
+      <attribute name="pageId">
+        <data type="NMTOKEN"/>
+      </attribute>
+      <attribute name="pageNumber">
+        <data type="integer"/>
+      </attribute>
+      <optional>
+        <attribute name="rank">
+          <data type="NCName"/>
+        </attribute>
+      </optional>
+      <oneOrMore>
+        <choice>
+          <text/>
+          <ref name="authority"/>
+          <ref name="date"/>
+        </choice>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="specimenCount">
+    <element name="specimenCount">
+      <attribute name="type">
+        <data type="NCName"/>
+      </attribute>
+      <text/>
+    </element>
+  </define>
+  <define name="taxonomicName">
+    <element name="taxonomicName">
+      <optional>
+        <attribute name="LSID">
+          <data type="anyURI"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="LSID-HNS">
+          <data type="anyURI"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="authority"/>
+      </optional>
+      <optional>
+        <attribute name="authorityName"/>
+      </optional>
+      <optional>
+        <attribute name="authorityYear">
+          <data type="integer"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="class">
+          <data type="NCName"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="family">
+          <data type="NCName"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="genus">
+          <data type="NCName"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="higher">
+          <data type="NCName"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="higherTaxonomySource">
+          <data type="NCName"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="kingdom">
+          <data type="NCName"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="lsidName"/>
+      </optional>
+      <optional>
+        <attribute name="lsidName-HNS"/>
+      </optional>
+      <optional>
+        <attribute name="order">
+          <data type="NCName"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="pageId">
+          <data type="NMTOKEN"/>
+        </attribute>
+      </optional>
+      <attribute name="pageNumber">
+        <data type="integer"/>
+      </attribute>
+      <optional>
+        <attribute name="phylum">
+          <data type="NCName"/>
+        </attribute>
+      </optional>
+      <attribute name="rank">
+        <data type="NCName"/>
+      </attribute>
+      <optional>
+        <attribute name="species">
+          <data type="NCName"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="subFamily">
+          <data type="NCName"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="subSpecies">
+          <data type="NCName"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="tribe">
+          <data type="NCName"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="variety">
+          <data type="NCName"/>
+        </attribute>
+      </optional>
+      <oneOrMore>
+        <choice>
+          <text/>
+          <ref name="authority"/>
+          <ref name="normalizedToken"/>
+          <ref name="pageBreakToken"/>
+          <ref name="span"/>
+          <ref name="taxonomicName"/>
+          <ref name="taxonomicNameLabel"/>
+        </choice>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="tr">
+    <element name="tr">
+      <attribute name="pageId">
+        <data type="NMTOKEN"/>
+      </attribute>
+      <attribute name="pageNumber">
+        <data type="integer"/>
+      </attribute>
+      <oneOrMore>
+        <element name="td">
+          <optional>
+            <attribute name="colspan">
+              <data type="integer"/>
+            </attribute>
+          </optional>
+          <optional>
+            <attribute name="isEmpty">
+              <data type="boolean"/>
+            </attribute>
+          </optional>
+          <attribute name="pageId">
+            <data type="NMTOKEN"/>
+          </attribute>
+          <attribute name="pageNumber">
+            <data type="integer"/>
+          </attribute>
+          <optional>
+            <attribute name="style">
+              <data type="anyURI"/>
+            </attribute>
+          </optional>
+          <oneOrMore>
+            <choice>
+              <text/>
+              <ref name="pageBreakToken"/>
+              <ref name="span"/>
+              <ref name="taxonomicName"/>
+            </choice>
+          </oneOrMore>
+        </element>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="span">
+    <element name="span">
+      <attribute name="class">
+        <data type="NCName"/>
+      </attribute>
+      <optional>
+        <attribute name="lastPageNumber">
+          <data type="integer"/>
+        </attribute>
+      </optional>
+      <attribute name="pageId">
+        <data type="NCName"/>
+      </attribute>
+      <attribute name="pageNumber">
+        <data type="integer"/>
+      </attribute>
+      <optional>
+        <attribute name="style">
+          <data type="anyURI"/>
+        </attribute>
+      </optional>
+      <oneOrMore>
+        <choice>
+          <text/>
+          <ref name="authority"/>
+          <ref name="materialsCitation"/>
+          <ref name="normalizedToken"/>
+          <ref name="pageBreakToken"/>
+          <ref name="quantity"/>
+          <ref name="taxonomicName"/>
+          <ref name="taxonomicNameLabel"/>
+          <ref name="treatmentCitation"/>
+          <ref name="typeStatus"/>
+          <element name="sup">
+            <attribute name="pageId">
+              <data type="NCName"/>
+            </attribute>
+            <attribute name="pageNumber">
+              <data type="integer"/>
+            </attribute>
+            <data type="NCName"/>
+          </element>
+        </choice>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="collectingDate">
+    <element name="collectingDate">
+      <optional>
+        <attribute name="day">
+          <data type="integer"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="month">
+          <data type="integer"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="pageId">
+          <data type="NMTOKEN"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="pageNumber">
+          <data type="integer"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="value">
+          <data type="NMTOKEN"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="valueMax">
+          <data type="date"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="valueMin">
+          <data type="date"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="year">
+          <data type="integer"/>
+        </attribute>
+      </optional>
+      <text/>
+    </element>
+  </define>
+  <define name="collectingRegion">
+    <element name="collectingRegion">
+      <optional>
+        <attribute name="pageId">
+          <data type="integer"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="pageNumber">
+          <data type="integer"/>
+        </attribute>
+      </optional>
+      <text/>
+    </element>
+  </define>
+  <define name="collectorName">
+    <element name="collectorName">
+      <optional>
+        <attribute name="pageId">
+          <data type="NMTOKEN"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="pageNumber">
+          <data type="integer"/>
+        </attribute>
+      </optional>
+      <oneOrMore>
+        <choice>
+          <text/>
+          <ref name="taxonomicName"/>
+        </choice>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="elevation">
+    <element name="elevation">
+      <optional>
+        <attribute name="metricMagnitude">
+          <data type="integer"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="metricUnit">
+          <data type="NCName"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="metricValue">
+          <data type="decimal"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="metricValueMax">
+          <data type="decimal"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="metricValueMin">
+          <data type="decimal"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="pageId">
+          <data type="integer"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="pageNumber">
+          <data type="integer"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="unit">
+          <data type="NCName"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="value">
+          <data type="decimal"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="valueMax">
+          <data type="decimal"/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="valueMin">
+          <data type="decimal"/>
+        </attribute>
+      </optional>
+      <text/>
+    </element>
+  </define>
+  <define name="authority">
+    <element name="authority">
+      <attribute name="pageId">
+        <data type="NMTOKEN"/>
+      </attribute>
+      <attribute name="pageNumber">
+        <data type="integer"/>
+      </attribute>
+      <text/>
+    </element>
+  </define>
+</grammar>
