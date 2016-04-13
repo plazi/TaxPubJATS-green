@@ -1,0 +1,7 @@
+/document/treatment/subSubSection/paragraph/emphasis/heading/taxonomicName/treatmentCitationGroup/treatmentCitation
+/document/treatment/subSubSection/paragraph/materialsCitation/treatmentCitation
+/document/treatment/subSubSection/paragraph/taxonomicName/treatmentCitationGroup/treatmentCitation
+/document/treatment/subSubSection/paragraph/treatmentCitation
+/document/treatment/subSubSection/paragraph/treatmentCitationGroup/taxonomicName/bibRefCitation/treatmentCitation
+/document/treatment/subSubSection/paragraph/treatmentCitationGroup/taxonomicName/treatmentCitation
+/document/treatment/subSubSection/paragraph/treatmentCitationGroup/treatmentCitation
