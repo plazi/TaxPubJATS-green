@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE tp:taxon-treatment SYSTEM "file:/home/thc4/working/Plazi/TaxPubJATS/tax-treatment-NS0.dtd">
+<!DOCTYPE tp:taxon-treatment SYSTEM "tax-treatment-NS0.dtd">
 <tp:taxon-treatment xmlns:tp="http://www.plazi.org/taxpub">
     <tp:nomenclature>
         <tp:taxon-name><tp:taxon-name-part taxon-name-part-type="genus">Aus</tp:taxon-name-part></tp:taxon-name>
     </tp:nomenclature>
+    <tp:treatment-sec><p><tp:taxon-name><tp:taxon-name-part taxon-name-part-type="Genus" reg="Aus">A.</tp:taxon-name-part></tp:taxon-name></p></tp:treatment-sec>
 </tp:taxon-treatment>
